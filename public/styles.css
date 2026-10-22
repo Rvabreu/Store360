@@ -1,0 +1,33 @@
+:root { color-scheme: light; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #202b3c; background: #f3f6fa; }
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; }
+.site-header { min-height: 64px; padding: 12px max(20px, calc((100% - 900px) / 2)); display: flex; align-items: center; justify-content: space-between; gap: 16px; background: #173b67; color: #fff; }
+.site-header form { margin: 0; }
+.brand { color: #fff; font-size: 1.25rem; font-weight: 700; text-decoration: none; }
+main { width: min(900px, calc(100% - 32px)); margin: 28px auto; }
+.demo-warning { padding: 14px 16px; margin-bottom: 24px; border: 1px solid #e7bf62; border-left: 5px solid #d99116; border-radius: 6px; background: #fff6df; line-height: 1.5; }
+section, .panel { padding: 24px; border: 1px solid #dce3ec; border-radius: 8px; background: #fff; box-shadow: 0 2px 8px #1529430d; }
+h1 { margin-top: 0; }
+h2 { margin-top: 28px; font-size: 1.2rem; }
+a { color: #155a9c; }
+label { display: block; margin: 20px 0 8px; font-weight: 650; }
+select, button { min-height: 42px; padding: 8px 12px; border: 1px solid #9aaabd; border-radius: 5px; font: inherit; }
+select { display: block; width: 100%; max-width: 420px; margin-bottom: 16px; background: #fff; }
+button { background: #174f84; color: #fff; cursor: pointer; }
+button:hover { background: #103b65; }
+.site-header button { min-height: 36px; padding: 5px 10px; border-color: #b4cce5; background: transparent; }
+.site-header span { margin-left: auto; }
+.order-list { padding: 0; list-style: none; }
+.order-list li + li { margin-top: 10px; }
+.order-list a { display: flex; justify-content: space-between; align-items: center; gap: 14px; padding: 16px; border: 1px solid #dce3ec; border-radius: 6px; text-decoration: none; }
+.order-list a:hover { border-color: #397bb4; background: #f7fbff; }
+.order-id, .status { font-weight: 700; }
+.status, .current-status { color: #174f84; }
+.timeline { list-style: none; padding: 0; border-left: 2px solid #c9d8e8; }
+.timeline li { position: relative; display: grid; gap: 4px; padding: 0 0 22px 20px; }
+.timeline li::before { position: absolute; left: -7px; top: 5px; width: 12px; height: 12px; border-radius: 50%; background: #2776b9; content: ""; }
+.timeline time { color: #59697d; font-size: .92rem; }
+.timeline span { color: #46566b; }
+.error { color: #9f2020; }
+footer { width: min(900px, calc(100% - 32px)); margin: 0 auto 32px; color: #59697d; font-size: .92rem; }
+@media (max-width: 600px) { .order-list a { align-items: flex-start; flex-direction: column; gap: 5px; } section, .panel { padding: 18px; } }

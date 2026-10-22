@@ -1,0 +1,47 @@
+{
+  "users": [
+    { "id": "ana-demo", "name": "Ana Exemplo" },
+    { "id": "bruno-demo", "name": "Bruno Exemplo" }
+  ],
+  "orders": [
+    {
+      "id": "DEMO-1001",
+      "userId": "ana-demo",
+      "placedAt": "2026-09-12T10:15:00Z",
+      "items": [
+        { "name": "Caneca azul fictícia", "quantity": 1 },
+        { "name": "Caderno de demonstração", "quantity": 2 }
+      ],
+      "events": [
+        { "status": "shipped", "at": "2026-09-13T12:00:00Z", "description": "Pedido fictício enviado" },
+        { "status": "confirmed", "at": "2026-09-12T10:15:00Z", "description": "Pedido fictício confirmado" },
+        { "status": "processing", "at": "2026-09-12T16:30:00Z", "description": "Preparação de demonstração" }
+      ]
+    },
+    {
+      "id": "DEMO-1002",
+      "userId": "ana-demo",
+      "placedAt": "2026-09-18T08:00:00Z",
+      "items": [
+        { "name": "Luminária de exemplo", "quantity": 1 }
+      ],
+      "events": [
+        { "status": "confirmed", "at": "2026-09-18T08:00:00Z", "description": "Pedido fictício confirmado" }
+      ]
+    },
+    {
+      "id": "DEMO-2001",
+      "userId": "bruno-demo",
+      "placedAt": "2026-09-15T14:20:00Z",
+      "items": [
+        { "name": "Bolsa de demonstração", "quantity": 1 }
+      ],
+      "events": [
+        { "status": "delivered", "at": "2026-09-17T11:45:00Z", "description": "Exemplo de status final" },
+        { "status": "processing", "at": "2026-09-15T18:00:00Z", "description": "Preparação de demonstração" },
+        { "status": "shipped", "at": "2026-09-16T09:10:00Z", "description": "Pedido fictício enviado" },
+        { "status": "confirmed", "at": "2026-09-15T14:20:00Z", "description": "Pedido fictício confirmado" }
+      ]
+    }
+  ]
+}
